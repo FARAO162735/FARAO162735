@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Texto para Animação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .options, .output {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #output {
+            border: 1px solid #ddd;
+            height: 300px;
+            background-color: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Texto para Animação</h1>
+        <p>Insira o texto para converter em uma animação:</p>
+        <textarea id="inputText" placeholder="Digite o texto aqui..."></textarea>
+        
+        <div class="options">
+            <button onclick="convertTo2D()">Animação 2D</button>
+            <button onclick="convertTo3D()">Animação 3D</button>
+        </div>
+        
+        <div id="output" class="output">
+            A animação será exibida aqui.
+        </div>
+    </div>
+
+    <script>
+        function convertTo2D() {
+            document.getElementById('output').innerText = 'Animação 2D gerada a partir do texto!';
+        }
+
+        function convertTo3D() {
+            document.getElementById('output').innerText = 'Animação 3D gerada a partir do texto!';
+        }
+    </script>
+</body>
+</html>
